@@ -11,15 +11,15 @@ simple_face_recognition
 
 original_data  
 	├─ man_0  
-	|	image_man_0_0.jpg  
-	|	image_man_0_1.jpg  
-	|	...  
+	│	image_man_0_0.jpg  
+	│	image_man_0_1.jpg  
+	│	...  
 	├─ man_1  
-	|	image_man_1_0.jpg  
-	|	image_man_1_1.jpg  
-	|	...  
+	│	image_man_1_0.jpg  
+	│	image_man_1_1.jpg  
+	│	...  
 	...  
-	|  
+	│  
 	└─ man_N  
 		image_man_N_0.jpg  
 		image_man_N_1.jpg  
@@ -55,15 +55,15 @@ extract_face_images.pyで自作データセットから顔認識用のデータ�
 
 training_data    
 	├─ man_0    
-	|	face_image_man_0_0.jpg    
-	|	face_image_man_0_1.jpg    
-	|	...    
+	│	face_image_man_0_0.jpg    
+	│	face_image_man_0_1.jpg    
+	│	...    
 	├─ man_1    
-	|	face_image_man_1_0.jpg    
-	|	face_image_man_1_1.jpg    
-	|	...    
+	│	face_image_man_1_0.jpg    
+	│	face_image_man_1_1.jpg    
+	│	...    
 	...    
-	|    
+	│    
 	└─ man_N    
 		face_image_man_N_0.jpg    
 		face_image_man_N_1.jpg    
