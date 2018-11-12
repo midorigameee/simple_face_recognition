@@ -36,45 +36,43 @@ original_dataというディレクトリの中に認識対象の人物名のデ�
 
 
 # Development environmental
-OS : Windows 10
-Python : Python 3.5.3 |Anaconda 4.4.0 (64-bit)
-GPU : None
+OS : Windows 10  
+Python : Python 3.5.3 |Anaconda 4.4.0 (64-bit)  
+GPU : None  
 
-pytorch : 0.4.1
-torchvision : 0.2.1
-opencv : 3.4.1
+pytorch : 0.4.1  
+torchvision : 0.2.1  
+opencv : 3.4.1  
 
 
 # Usage
-extract_face_images.pyで自作データセットから顔認識用のデータセットを作成し、
-train_model.pyでそのデータセットを学習した顔認識モデルを作成します。
+extract_face_images.pyで自作データセットから顔認識用のデータセットを作成し、train_model.pyでそのデータセットを学習した顔認識モデルを作成します。  
 各プログラムの詳細は以下のようになります。
 
 ## extract_face_images.py
 自作のデータセットから顔のみを抽出し、機械学習用のデータセットに成形するプログラムです。
 上記で説明したoriginal_dataから以下のようなtraining_dataを作成します。
 
-training_data
-	├─ man_0
-	|	face_image_man_0_0.jpg
-	|	face_image_man_0_1.jpg
-	|	...
-	├─ man_1
-	|	face_image_man_1_0.jpg
-	|	face_image_man_1_1.jpg
-	|	...
-	...
-	|
-	└─ man_N
-		face_image_man_N_0.jpg
-		face_image_man_N_1.jpg
-		...
+training_data  
+	├─ man_0  
+	|	face_image_man_0_0.jpg  
+	|	face_image_man_0_1.jpg  
+	|	...  
+	├─ man_1  
+	|	face_image_man_1_0.jpg  
+	|	face_image_man_1_1.jpg  
+	|	...  
+	...  
+	|  
+	└─ man_N  
+		face_image_man_N_0.jpg  
+		face_image_man_N_1.jpg  
+		...  
 
-顔を抽出する際にcascadeを指定する必要があります。
-これは各々保存パスが異なるので、適宜変更してください。
+顔を抽出する際にcascadeを指定する必要があります。これは各々保存パスが異なるので、適宜変更してください。
 
 ## train_model.py
-training_dataを基に機械学習を行い分類器を作成します。
+training_dataを基に機械学習を行い分類器を作成します。  
 ネットワークにはCNNを使用しています。今回はシンプルさを意識したので、ネットワーク構造は32×32のRGB画像を対象にしたLeNetにしました。
 
 
