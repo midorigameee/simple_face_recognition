@@ -1,0 +1,3 @@
+*.ckpt
+original_data/
+training_data/
