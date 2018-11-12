@@ -27,7 +27,6 @@ SAVE_DIR
 
 import cv2
 import os
-import numpy as np
 
 
 FACE_SIZE = None    # None以外ならその大きさにリサイズする
