@@ -69,7 +69,7 @@ def main():
     test_size = len(full_dataset) - train_size  
     train_dataset, test_dataset = torch.utils.data.random_split(
                                         dataset=full_dataset,
-                                        lengths=[train_size, test_size])  
+                                        lengths=[train_size, test_size])
 
     # DataLoader化
     train_loader = torch.utils.data.DataLoader(
@@ -124,6 +124,7 @@ def main():
         print('Test Accuracy: {:.3f} %' .format(100 * correct / total))
 
     # モデルの保存
+    model_name = "model_" + DATASET_DIR + ".ckpt"
     torch.save(model.state_dict(), 'model.ckpt')
 
 
